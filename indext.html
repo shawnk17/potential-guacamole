@@ -9,27 +9,19 @@ x<!DOCTYPE html>
 </head>
 
 <body>
-        <div class="wrapper">
-                <h1>Hangman</h1>
-                 <h2>Hangman Game</h2>
-                 <p>Use the alphabet below to guess the word, or click hint to get a clue. </p>
-             </div>
-             <div class="wrapper">
-                 <div id="buttons">
-                 </div>  
-                 <p id="catagoryName"></p>
-                 <div id="hold">
-                 </div>
-                 <p id="mylives"></p>
-                 <p id="clue">Clue -</p>  
-                  <canvas id="stickman">This Text will show if the Browser does NOT support HTML5 Canvas tag</canvas>
-                 <div class="container">
-                   <button id="hint">Hint</button>
-                   <button id="reset">Play again</button>
-                 </div>
-             </div>
-    
-<script src= "js.js"></script>
 
-</body>
-</html>
+<h1>Hangman<br>
+    Your favorite classroom pastime returns!</h1>
+  <p id="ratefeld"></p>
+  <form name="rateformular">
+  <input name="ratezeichen" type="text" size="5" maxlength="1">
+  <input name="ratebutton" type="button" value="Guess" onClick="pruefeZeichen()">
+  
+  <p id="gerateneBuchstaben">Wrong Letters:</p>
+  <input name="refresh" type="button" value="New Game" onClick="location.reload()">
+  </form>
+
+  <script src= "js.js"></script>
+  
+  </body>
+  </html>
